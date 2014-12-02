@@ -1,6 +1,6 @@
 <?php 
 
-	require_once("lib/YouTube-CLosed-Captions/closed-captions.php");
+	require_once("./lib/YouTube-CLosed-Captions/closed-captions.php");
 	header('Content-Type: application/json');
 	if($_GET['url']) {
 		$captions = getClosedCaptionsForVideo($_GET['url']);
